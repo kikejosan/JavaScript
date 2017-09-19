@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		/*
+		var lista=new Array();
+		lista.push(2);
+		lista.push('hola');
+		console.log(lista[1]);
+		*/
+		
+		var lista=[1,2,3];
+		var cadena ='';
+		console.log('Hola holita consola del explorador')
+		console.log(lista.length);
+		console.log(' la lista es así '+lista)
+
+		for (i=0;i<lista.length;i++){
+			cadena = cadena + lista[i].toString();
+		}
+		console.log(cadena);
+
+		var lista2=[[1,2,3],['a','b','c']];
+		/*
+		for(i=0;i<lista2[1].length;i++)
+			console.log(lista2[1][i]);
+		*/
+		
+		for(i=0;i<lista2.length;i++)
+			for(j=0;j<lista2[i].length;j++)
+				console.log(lista2[i][j]);
+
+		var cadena=lista2[1].join('');
+		console.log(cadena);
+
+		var cadena2='hola';
+		var lista3=cadena2.split('');
+		console.log(lista3[1]);
+
+		var cadena3='ho-la';
+		var lista4=cadena3.split('-');
+		console.log(lista4[0]);
+
+		function mostrarLista(lista){
+			var cadena = '';
+			for(i=0;i<lista.length;i++){
+				cadena = cadena + lista[i].toString();
+			}
+			console.log(cadena);
+		};
+
+		function mostrarMatriz(matriz){
+			console.log('hola');
+			console.log(matriz);
+			for (i=0;i<matriz.length;i++){
+				mostrarLista(matriz[i]);
+			}
+
+
+				
+		
+		}
+		var lista3=[[1,2,3],['a','b','c'],[1,2,3],['a','b','c'],[1,2,3],['a','b','c'],[1,2,3],['a','b','c']];
+		var lista4=[23,43,12];
+		console.log(lista3[0][0]);
+		mostrarLista(lista4);
+		console.log('MATRIZ');
+		//mostrarMatriz(lista3);
+		//mostrarLista(lista3);
+		//mostrarMatriz(lista3);
+			
+
+	</script>
+</head>
+<body></body>
+</html>

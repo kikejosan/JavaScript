@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		function factorial(num)
+		{
+			var fac=1;
+			for(ind=num;ind>0;ind--)
+				fac=fac*ind;
+			/*
+			for(num;num>0;num--)
+			*/
+			return fac;
+		}
+
+		function suma(num, otroNum)
+		{
+			return num+otroNum;
+		}
+
+		function divisionEntera(dividendo, divisor)
+		{
+			var cociente=0;
+			while(dividendo>0){			
+				dividendo = dividendo - divisor;
+
+				if (dividendo < 0) {
+					return cociente;
+				}else{
+					cociente = cociente + 1;	
+				}
+			}
+			return cociente;
+		}
+
+		alert('La division ENTERA da '+divisionEntera(1,2));
+
+		/* Otro modo de declarar funciones
+		var factorial=function(num){
+			var fac=1;
+			for(num;num>0;num--)
+				fac=num*fac;
+			alert(fac);
+		}
+		factorial(3);
+		
+		*/
+		/* version dos de la divisionEntera
+		var division = function(dividendo,divisor){
+			var cociente=0;
+			while(dividendo>0){			
+				dividendo = dividendo - divisor;
+
+				if (dividendo < 0) {
+					return cociente;
+				}else{
+					cociente = cociente + 1;	
+				}
+			}
+			return cociente;
+		}
+		division(6,3);
+		*/
+	</script>
+</head>
+<body>
+</body>
+</html>

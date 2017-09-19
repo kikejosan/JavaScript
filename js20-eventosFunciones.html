@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title></title>
+	<script>
+		function attachEvent(){
+			var btn=document.getElementById("btn");
+			if (btn){
+				btn.onclick=function(){
+					alert('Ahora soy un boton funcional');
+				};
+				btn.value="Boton funcional";
+			}
+		}
+
+
+		//lo que está haciendo aquí es en lugar de añadir el evento a nivel de la etiqueta <input> lo está haciendo en el código del script una vez pulses en el dos
+	</script>
+</head>
+<body>
+<input id="btn" type="button" value="Boton no funcional" />
+<input id="btn2" type="button" value="Asociamos una funcion al boton anterior" onclick="attachEvent()" />
+</body>
+</html>
